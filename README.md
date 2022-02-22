@@ -58,9 +58,12 @@ Como todos sabem, uma string é um vetor de caracteres, portanto o objetivo do a
 ## Dicas / Regras
 1. Ao codificar matenha seu código limpo e coerente. Manter padronização ajuda a equipe entender o que foi codificado, além de ajudar nas manutenções futuras;
 2. O arquivo `campo-minado.js` não pode ser modificado;
-3. O algoritimo deve analisar a string que representa o tabuleiro, não é valido fixar a abertura das posições que não possuem minas terrestres pela analise do algoritmo `campo-minado.js`;
-4. Não é para criar uma aplicação onde o usuário escolha qual posição abrir, é para ser um algoritimo autonomo que realize as jogadas;
-5. Exemplo de um algotimo realizando as jogadas até encontrar todas as posições sem minas terrestres:
+3. É permitido ter apenas uma instância da classe CampoMinado;
+4. O algoritimo deve realizar uma analise conforme a seção Objetivo do jogo e não um algoritmo de força bruta, abrindo todos as casas para se descobrir as minas terrestres para depois reabrir somente as que não tem minas terrestres;
+5. O algoritimo deve analisar a string que representa o tabuleiro, não é valido fixar a abertura das posições que não possuem minas terrestres pela analise do algoritmo `campo-minado.js`;
+6. Não é para criar uma aplicação onde o usuário escolha qual posição abrir, é para ser um algoritimo autonomo que realize as jogadas;
+7. Exemplo de um algotimo realizando as jogadas até encontrar todas as posições sem minas terrestres:
+
 ```
 ----------- Início do jogo -----------
 00000001-
